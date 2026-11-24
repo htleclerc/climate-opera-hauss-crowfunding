@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Golden Fountain Lapis &amp; Sable Plus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F1EA}
+a{color:#1F3BD6}a:hover{color:#0F237F}
+.b-wrap{max-width:1320px;margin:0 auto;box-sizing:border-box;padding-left:max(48px,env(safe-area-inset-left,0px));padding-right:max(48px,env(safe-area-inset-right,0px))}
+.bod{font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:800 !important;text-transform:uppercase;letter-spacing:0 !important}
+.bod em{font-style:normal;color:#1F3BD6}
+.lead{font-family:'Hanken Grotesk',system-ui,sans-serif}
+.m-bar{display:none}
+.syn{font-family:'Big Shoulders Display','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.03em}
+.lbl{font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.b-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 30px;border-radius:999px;font:700 13px/1 'Hanken Grotesk',sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;box-sizing:border-box;border:0;cursor:pointer;transition:transform .25s ease,background .25s ease}
+.b-btn:hover{transform:translateY(-2px)}
+.b-lapis{background:#1F3BD6;color:#FFFFFF}.b-lapis:hover{background:#142AA8;color:#FFFFFF}
+.b-ink{background:#16130F;color:#F5F1EA}.b-ink:hover{background:#2E2A24;color:#F5F1EA}
+.b-ghost{background:transparent;color:#16130F;border:1.5px solid #16130F}.b-ghost:hover{background:#16130F;color:#F5F1EA}
+.spin{animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.marq{display:flex;width:max-content;animation:marq 38s linear infinite}
+@keyframes marq{to{transform:translateX(-50%)}}
+.tier-row{transition:background .3s ease}
+.tier-row:hover{background:#EDE6DA}
+.chip{min-height:48px;min-width:72px;padding:0 18px;border-radius:999px;border:1.5px solid #C9BFAE;background:#FFFFFF;font:600 16px 'Hanken Grotesk',sans-serif;color:#16130F;cursor:pointer}
+.chip-on{border-color:#1F3BD6;background:#1F3BD6;color:#FFFFFF}
+.b-menu{display:none;width:44px;height:44px;border-radius:50%;border:1.5px solid #16130F;background:transparent;color:#16130F;align-items:center;justify-content:center;cursor:pointer}
+.b-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+@media (prefers-reduced-motion:reduce){.spin,.marq{animation:none}}
+@media (max-width:1000px){
+.b-heroimg{flex-basis:100% !important;max-width:460px;margin:0 auto}
+.b-badge{left:14px !important;bottom:50px !important;transform:scale(.8);transform-origin:left bottom}
+.b-ph{height:340px !important}
+.b-lib2{padding-top:0 !important}
+.b-cyc article{padding:32px 24px !important;border-right:0 !important;border-bottom:1px solid #C9BFAE}
+.tier-row{grid-template-columns:150px 1fr auto !important;row-gap:10px !important}
+.tier-row>div:first-child{font-size:48px !important}
+.tier-row p{grid-column:2 / 4;grid-row:2}
+.tier-row .b-btn{grid-column:3;grid-row:1}
+.b-stub{border-left:0 !important;border-top:1.5px dashed #16130F}
+.secb{padding-top:96px !important;padding-bottom:96px !important}
+}
+@media (max-width:860px){
+.b-wrap{padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
+.b-nav{display:none !important}
+.b-menu{display:inline-flex}
+}
+@media (max-width:600px){
+.b-wrap{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.b-lang{display:none !important}
+.b-brand{font-size:18px !important}
+.b-meta>div{border-left:0 !important;padding-left:0 !important}
+.b-cta .b-btn{flex:1 1 100%}
+.marq{font-size:17px !important;gap:28px !important}
+.b-gnum{margin-top:-84px !important}
+.b-glbl{max-width:190px !important;font-size:10px !important}
+.b-gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-right:-20px;padding-right:20px}
+.b-gal figure{flex:0 0 76%;margin-top:0 !important;scroll-snap-align:start}
+.b-ph{height:380px !important}
+.tier-row{grid-template-columns:1fr !important}
+.tier-row p,.tier-row .b-btn{grid-column:auto;grid-row:auto}
+.tier-feat{margin:0 -20px !important;padding:28px 20px !important}
+.b-form{padding:28px 22px !important;border-radius:20px !important}
+.b-team article{grid-template-columns:1fr !important}
+.b-team article>div:first-child{width:150px}
+.b-tk{padding:28px 22px !important}
+.m-bar{display:flex;position:sticky;bottom:0;z-index:5;gap:12px;align-items:center;justify-content:space-between;padding:12px 20px;background:#F5F1EA;border-top:1.5px solid #16130F}
+.secb{padding-top:72px !important;padding-bottom:72px !important}
+}
+
+.faq details{border-bottom:1px solid #C9BFAE}
+.faq summary{cursor:pointer;list-style:none;padding:22px 44px 22px 0;font-size:18px;font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:14px;font:800 30px 'Big Shoulders Display',sans-serif;color:#1F3BD6}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:0 0 24px;font-size:16px;line-height:1.7;color:#3B362F;max-width:62ch}
+.faq summary:focus-visible{outline:2px solid #1F3BD6;outline-offset:4px}
+.m-bar{padding-bottom:calc(12px + env(safe-area-inset-bottom,0px)) !important}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
+</head>
+<body>
+<div style="background: #F5F1EA; color: #16130F; font-family: 'Hanken Grotesk', system-ui, sans-serif; width: 100%; overflow: hidden">
+
+<!-- NAV -->
+<header class="b-wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 96px">
+<a href="#top" class="syn b-brand" style="text-decoration: none; color: #16130F; font-weight: 800; font-size: 22px; letter-spacing: .06em; text-transform: uppercase; display: flex; align-items: center; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#16130F" stroke-width="1.5" aria-hidden="true"><path d="M15 3 27 25H3Z"/><path d="M15 27 3 5h24Z" stroke="#1F3BD6"/></svg>
+Climate Opera Haus
+</a>
+<nav class="b-nav" aria-label="Main" style="display: flex; gap: 40px">
+<a class="lbl" href="#opera" style="color: #16130F; text-decoration: none">The Opera</a>
+<a class="lbl" href="#cycle" style="color: #16130F; text-decoration: none">The Cycle</a>
+<a class="lbl" href="#support" style="color: #16130F; text-decoration: none">Support</a>
+<a class="lbl" href="#tickets" style="color: #16130F; text-decoration: none">Tickets</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<div class="b-lang" style="display: flex; border: 1.5px solid #16130F; border-radius: 999px; overflow: hidden">
+<button type="button" class="lbl" style="min-height: 40px; min-width: 48px; border: 0; background: #16130F; color: #F5F1EA; cursor: pointer">EN</button>
+<button type="button" class="lbl" style="min-height: 40px; min-width: 48px; border: 0; background: transparent; color: #16130F; cursor: pointer">FR</button>
+</div>
+<button type="button" class="b-menu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="b-wrap" style="padding-top: 24px; padding-bottom: 40px; position: relative">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; border-top: 1.5px solid #16130F; padding-top: 18px">
+<span class="lbl">Climate Opera Haus presents</span>
+<span class="lbl" style="color: #1F3BD6">UK Premiere — Desert Opera</span>
+<span class="lbl">II / IV</span>
+</div>
+
+<h1 class="bod mega" aria-label="The Golden Fountain" style="margin: 20px 0 0; font-size: clamp(64px, 20vw, 290px); line-height: .86; font-weight: 400; letter-spacing: -.035em">The Golden</h1>
+
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; margin-top: 36px">
+<div style="flex: 999 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 32px; padding-bottom: 12px">
+<p class="lead" style="margin: 0; font-weight: 500; font-size: clamp(19px, 2vw, 24px); line-height: 1.45; max-width: 560px; text-wrap: pretty">A boy who loves books. A bird that speaks. A desert that remembers. A new climate opera by Stefania Passamonte.</p>
+<dl class="b-meta" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border-top: 1px solid #C9BFAE">
+<div style="padding: 16px 16px 16px 0"><dt class="lbl" style="color: #5D574E; font-size: 11px">Date</dt><dd class="syn" style="margin: 8px 0 0; font-size: 22px; font-weight: 700">5 Dec 2026</dd></div>
+<div style="padding: 16px; border-left: 1px solid #C9BFAE"><dt class="lbl" style="color: #5D574E; font-size: 11px">Curtain</dt><dd class="syn" style="margin: 8px 0 0; font-size: 22px; font-weight: 700">7:30 pm</dd></div>
+<div style="padding: 16px; border-left: 1px solid #C9BFAE"><dt class="lbl" style="color: #5D574E; font-size: 11px">Venue</dt><dd class="syn" style="margin: 8px 0 0; font-size: 22px; font-weight: 700">Conway Hall</dd></div>
+</dl>
+<div class="b-cta" style="display: flex; flex-wrap: wrap; gap: 14px">
+<a class="b-btn b-lapis" href="#support">Support the production
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="b-btn b-ghost" href="#tickets">Book tickets</a>
+</div>
+</div>
+
+<div class="b-heroimg" style="flex: 1 1 380px; min-width: 0; position: relative">
+<div style="border-radius: 999px 999px 0 0; overflow: hidden; height: 540px; background: #E6DED0">
+<img src="img/stage.jpg" alt="Soria Moria on stage at Conway Hall: singer and pianist before a projected Arctic landscape" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; display: block">
+</div>
+<p style="margin: 12px 0 0; font-size: 12px; color: #5D574E; text-align: right">Soria Moria, world premiere 2026 — first opera of the cycle</p>
+<div class="b-badge" style="position: absolute; left: -58px; bottom: 90px; width: 150px; height: 150px; border-radius: 50%; background: #1F3BD6; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
+<svg class="spin" width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="Saturday 5 December 2026, Conway Hall London" style="position: absolute; inset: 0">
+<defs><path id="circ" d="M75 75m-56 0a56 56 0 1 1 112 0a56 56 0 1 1-112 0"/></defs>
+<text fill="#FFFFFF" style="font: 700 11px Hanken Grotesk, sans-serif; letter-spacing: 3.2px; text-transform: uppercase"><textPath href="#circ">Saturday 5 December · Conway Hall · London ·</textPath></text>
+</svg>
+<svg width="34" height="34" viewBox="0 0 30 30" fill="none" stroke="#FFFFFF" stroke-width="1.6" aria-hidden="true"><path d="M15 4 26 24H4Z"/></svg>
+</div>
+</div>
+</div>
+
+<div class="bod mega" aria-hidden="true" style="margin: 12px 0 0; font-size: clamp(64px, 20vw, 290px); line-height: .86; font-weight: 400; letter-spacing: -.035em; text-align: right; color: #1F3BD6">Fountain</div>
+</section>
+
+<!-- MARQUEE -->
+<div style="background: #16130F; color: #F5F1EA; padding: 22px 0; overflow: hidden" aria-label="The four operas of the cycle">
+<div class="marq syn" style="gap: 48px; font-size: 26px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap">
+<span>Air — Soria Moria</span><span style="color: #C9A56B">◇</span><span>Fire — The Golden Fountain</span><span style="color: #C9A56B">◇</span><span>Water — The Water Dragon</span><span style="color: #C9A56B">◇</span><span>Earth — Roar to the Wind</span><span style="color: #C9A56B">◇</span>
+<span>Air — Soria Moria</span><span style="color: #C9A56B">◇</span><span>Fire — The Golden Fountain</span><span style="color: #C9A56B">◇</span><span>Water — The Water Dragon</span><span style="color: #C9A56B">◇</span><span>Earth — Roar to the Wind</span><span style="color: #C9A56B">◇</span>
+</div>
+</div>
+
+<!-- FUNDING GAUGE -->
+<section class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 64px; align-items: center">
+<div>
+<span class="lbl" style="color: #1F3BD6">Support campaign</span>
+<h2 class="bod h2b" style="margin: 18px 0 0; font-size: clamp(40px, 7vw, 76px); line-height: .95; font-weight: 400; letter-spacing: -.02em">Fill the <em>fountain.</em></h2>
+<p style="margin: 28px 0 0; font-size: 18px; line-height: 1.7; color: #3B362F; max-width: 520px; text-wrap: pretty">Each gift fills the fountain a little more: singers, choir, musicians, set and visual design for the UK premiere — and the next two operas of the cycle.</p>
+<a class="b-btn b-lapis" href="#support" style="margin-top: 36px">Give now</a>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center">
+<svg viewBox="0 0 340 190" style="width: min(520px, 100%); height: auto; display: block" role="img" aria-label="Funding progress gauge">
+<path d="M30 170 A140 140 0 0 1 310 170" fill="none" stroke="#E2D9C9" stroke-width="18" stroke-linecap="round"/>
+<path d="M30 170 A140 140 0 0 1 310 170" fill="none" stroke="#1F3BD6" stroke-width="18" stroke-linecap="round" stroke-dasharray="153.9 439.8"/>
+<path d="M60 170 A110 110 0 0 1 280 170" fill="none" stroke="#C9A56B" stroke-width="1" stroke-dasharray="2 6"/>
+</svg>
+<div class="b-gnum" style="margin-top: -110px; text-align: center">
+<div class="bod" style="font-size: clamp(36px, 8vw, 60px); line-height: 1">£[RAISED]</div>
+<div class="lbl b-glbl" style="margin: 10px auto 0; max-width: 300px; color: #5D574E">of £[GOAL] · [N] supporters · [N] days left</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- THE OPERA — editorial spread -->
+<section id="opera" style="background: #EDE6DA">
+<div class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 64px">
+<div>
+<span class="lbl" style="color: #1F3BD6">The libretto</span>
+<p class="lead" style="margin: 24px 0 0; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.5; text-wrap: pretty"><span class="bod" style="float: left; font-size: clamp(88px, 11vw, 128px); line-height: .78; padding: 8px 14px 0 0; color: #1F3BD6">A</span>bdul, a young boy from Al Khobar who loves books, is called by a mysterious Talking Bird to cross the desert in search of the legendary Golden Fountain — a sacred spring said to bring prosperity to the land.</p>
+</div>
+<div class="b-lib2" style="display: flex; flex-direction: column; gap: 28px; padding-top: 52px">
+<p style="margin: 0; font-size: 17px; line-height: 1.75; color: #3B362F">Drawing on Arabian folklore and contemporary environmental themes — water scarcity, education, cultural heritage and shared responsibility for the Earth — the opera joins classical opera with Arabic musical colours and choral writing.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.75; color: #3B362F">Sung in English with Arabic influences and subtitles. With <em>Soria Moria</em>, it forms a diptych on two extremes of our changing planet: ice and desert.</p>
+<ol style="list-style: none; margin: 12px 0 0; padding: 0; border-top: 1.5px solid #16130F">
+<li style="display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid #C9BFAE"><span class="syn" style="font-weight: 700; font-size: 20px">7:00 pm</span><span>Doors · foyer café</span></li>
+<li style="display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid #C9BFAE"><span class="syn" style="font-weight: 700; font-size: 20px">7:30 pm</span><span>Introduction with the creators</span></li>
+<li style="display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid #C9BFAE"><span class="syn" style="font-weight: 700; font-size: 20px; color: #1F3BD6">8:00 pm</span><span style="font-weight: 600">The Golden Fountain — the opera</span></li>
+<li style="display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid #C9BFAE"><span class="syn" style="font-weight: 700; font-size: 20px">9:00 pm</span><span>Explore the set and visual design</span></li>
+</ol>
+</div>
+</div>
+</section>
+
+<!-- GALLERY — staggered -->
+<section class="b-wrap" style="padding-top: 100px; padding-bottom: 40px">
+<div class="b-gal">
+<figure style="margin: 0">
+<div class="b-ph" style="height: 460px; overflow: hidden; border-radius: 0 160px 0 0"><img src="img/castle.jpg" alt="Singer before a projected castle in an icy landscape" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<figcaption class="lbl" style="margin-top: 14px; font-size: 11px; color: #5D574E">Soria Moria · Act I</figcaption>
+</figure>
+<figure style="margin: 80px 0 0">
+<div class="b-ph" style="height: 460px; overflow: hidden; border-radius: 999px 999px 0 0"><img src="img/lucia.jpg" alt="Young performer with a crown of candles" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block"></div>
+<figcaption class="lbl" style="margin-top: 14px; font-size: 11px; color: #5D574E">Lucia · candle procession</figcaption>
+</figure>
+<figure style="margin: 0">
+<div class="b-ph" style="height: 460px; overflow: hidden; border-radius: 160px 0 0 0; position: relative"><img src="img/violin.jpg" alt="Violinist in a cloak beside the piano" style="width: 100%; height: 100%; object-fit: cover; display: block">
+<button type="button" aria-label="Play the premiere highlights video" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 84px; height: 84px; border-radius: 50%; border: 0; background: #F5F1EA; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="26" height="26" viewBox="0 0 24 24" fill="#16130F" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+</div>
+<figcaption class="lbl" style="margin-top: 14px; font-size: 11px; color: #5D574E">Video · World premiere 2026</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- CYCLE — alchemical elements -->
+<section id="cycle" class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-end">
+<h2 class="bod h2b" style="margin: 0; font-size: clamp(40px, 7vw, 76px); line-height: .95; font-weight: 400; letter-spacing: -.02em; max-width: 720px">Four operas, <em>four elements,</em> one ethical circle.</h2>
+<p style="margin: 0; max-width: 380px; font-size: 16px; line-height: 1.7; color: #3B362F">Air awakens awareness. Fire tests intention. Water teaches humility. Earth demands action.</p>
+</div>
+<div class="b-cyc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); margin-top: 64px; border-top: 1.5px solid #16130F">
+<article style="padding: 36px 28px 40px 0; border-right: 1px solid #C9BFAE">
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#16130F" stroke-width="1.5" aria-hidden="true"><path d="M28 6 52 48H4Z"/><path d="M13 32h30"/></svg>
+<div class="syn" aria-hidden="true" style="margin-top: 28px; font-size: 64px; font-weight: 800; line-height: 1; color: #E2D9C9">01</div>
+<h3 class="bod" style="margin: 12px 0 0; font-size: 32px; font-weight: 400">Soria Moria</h3>
+<p class="lbl" style="margin: 10px 0 0; font-size: 11px; color: #5D574E">Air · Arctic · Listening</p>
+<p style="margin: 18px 0 0; font-size: 14px; color: #3B362F">World premiere 2026</p>
+</article>
+<article style="padding: 36px 28px 40px; border-right: 1px solid #C9BFAE; background: #1F3BD6; color: #FFFFFF">
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#FFFFFF" stroke-width="1.5" aria-hidden="true"><path d="M28 6 52 48H4Z"/></svg>
+<div class="syn" aria-hidden="true" style="margin-top: 28px; font-size: 64px; font-weight: 800; line-height: 1; color: #6C80EA">02</div>
+<h3 class="bod" style="margin: 12px 0 0; font-size: 32px; font-weight: 400">The Golden Fountain</h3>
+<p class="lbl" style="margin: 10px 0 0; font-size: 11px; color: #DCE2FF">Fire · Arabian Desert · Understanding</p>
+<p style="margin: 18px 0 0; font-size: 14px; font-weight: 600">UK premiere — 5 December 2026</p>
+</article>
+<article style="padding: 36px 28px 40px; border-right: 1px solid #C9BFAE">
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#16130F" stroke-width="1.5" aria-hidden="true"><path d="M28 50 4 8h48Z"/></svg>
+<div class="syn" aria-hidden="true" style="margin-top: 28px; font-size: 64px; font-weight: 800; line-height: 1; color: #E2D9C9">03</div>
+<h3 class="bod" style="margin: 12px 0 0; font-size: 32px; font-weight: 400">The Water Dragon</h3>
+<p class="lbl" style="margin: 10px 0 0; font-size: 11px; color: #5D574E">Water · Oceans · Responsibility</p>
+<p style="margin: 18px 0 0; font-size: 14px; color: #3B362F">In development</p>
+</article>
+<article style="padding: 36px 0 40px 28px">
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#16130F" stroke-width="1.5" aria-hidden="true"><path d="M28 50 4 8h48Z"/><path d="M13 24h30"/></svg>
+<div class="syn" aria-hidden="true" style="margin-top: 28px; font-size: 64px; font-weight: 800; line-height: 1; color: #E2D9C9">04</div>
+<h3 class="bod" style="margin: 12px 0 0; font-size: 32px; font-weight: 400">Roar to the Wind</h3>
+<p class="lbl" style="margin: 10px 0 0; font-size: 11px; color: #5D574E">Earth · Africa &amp; Haiti · Stewardship</p>
+<p style="margin: 18px 0 0; font-size: 14px; color: #3B362F">In development</p>
+</article>
+</div>
+</section>
+
+<!-- SUPPORT — programme-style list -->
+<section id="support" style="background: #FFFFFF">
+<div class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-end">
+<div>
+<span class="lbl" style="color: #1F3BD6">Join the circle</span>
+<h2 class="bod h2b" style="margin: 18px 0 0; font-size: clamp(40px, 7vw, 76px); line-height: .95; font-weight: 400; letter-spacing: -.02em">Give the Earth <em>a voice.</em></h2>
+</div>
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #3B362F"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F3BD6" stroke-width="1.8" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure online payment · options shown at checkout</p>
+</div>
+
+<div style="margin-top: 56px; border-top: 1.5px solid #16130F">
+<div class="tier-row" style="display: grid; grid-template-columns: 200px 1fr 1.3fr auto; gap: 32px; align-items: center; padding: 32px 0; border-bottom: 1px solid #DED5C5">
+<div class="bod" style="font-size: 64px; line-height: 1">£25</div>
+<div><div class="syn" style="font-size: 20px; font-weight: 700">Friend</div><div class="lbl" style="font-size: 11px; color: #5D574E; margin-top: 6px">Tier I</div></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B362F">Your name in the digital programme · rehearsal updates</p>
+<a class="b-btn b-ghost" href="#pay-25">Give £25</a>
+</div>
+<div class="tier-row" style="display: grid; grid-template-columns: 200px 1fr 1.3fr auto; gap: 32px; align-items: center; padding: 32px 0; border-bottom: 1px solid #DED5C5">
+<div class="bod" style="font-size: 64px; line-height: 1">£100</div>
+<div><div class="syn" style="font-size: 20px; font-weight: 700">Patron</div><div class="lbl" style="font-size: 11px; color: #5D574E; margin-top: 6px">Tier II</div></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B362F">Friend benefits · one Supporter ticket for 5 December · signed note from the composer</p>
+<a class="b-btn b-ghost" href="#pay-100">Give £100</a>
+</div>
+<div class="tier-row tier-feat" style="display: grid; grid-template-columns: 200px 1fr 1.3fr auto; gap: 32px; align-items: center; padding: 32px 24px; margin: 0 -24px; border-bottom: 1px solid #DED5C5; background: #EEF1FF">
+<div class="bod" style="font-size: 64px; line-height: 1; color: #1F3BD6">£250</div>
+<div><div class="syn" style="font-size: 20px; font-weight: 700">Benefactor</div><div class="lbl" style="font-size: 11px; color: #1F3BD6; margin-top: 6px">Most chosen</div></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B362F">Two Supporter tickets · meet the creators · name in the on-screen credits</p>
+<a class="b-btn b-lapis" href="#pay-250">Give £250</a>
+</div>
+<div class="tier-row" style="display: grid; grid-template-columns: 200px 1fr 1.3fr auto; gap: 32px; align-items: center; padding: 32px 0; border-bottom: 1px solid #DED5C5">
+<div class="bod" style="font-size: 64px; line-height: 1">£1,000</div>
+<div><div class="syn" style="font-size: 20px; font-weight: 700">Founding Circle</div><div class="lbl" style="font-size: 11px; color: #5D574E; margin-top: 6px">Tier IV</div></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B362F">Benefactor benefits · private rehearsal · credit across the whole Tetralogy</p>
+<a class="b-btn b-ghost" href="#pay-1000">Give £1,000</a>
+</div>
+</div>
+
+<form class="b-form" style="margin-top: 48px; background: #16130F; color: #F5F1EA; border-radius: 28px; padding: 40px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 280px">
+<div class="bod" style="font-size: 40px">Your own amount</div>
+<div style="font-size: 14px; color: #C8C0B2; margin-top: 6px">Every gift counts, whatever its size.</div>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+<legend style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Choose an amount</legend>
+<button type="button" class="chip">£10</button>
+<button type="button" class="chip chip-on">£50</button>
+<button type="button" class="chip">£500</button>
+<label for="amtb" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Other amount in pounds</label>
+<input id="amtb" type="text" inputmode="numeric" placeholder="Other £" style="min-height: 48px; width: 120px; border-radius: 999px; border: 1.5px solid #5D574E; background: transparent; color: #F5F1EA; padding: 0 18px; font: 500 16px 'Hanken Grotesk', sans-serif; box-sizing: border-box">
+<a class="b-btn b-lapis" href="#pay-custom">Continue to payment</a>
+</fieldset>
+</form>
+<p style="margin: 20px 0 0; font-size: 13px; color: #5D574E">Gifts are received by [LEGAL ENTITY NAME · REGISTRATION NO.] · receipt sent by email</p>
+</div>
+</section>
+
+
+<!-- WHERE YOUR GIFT GOES -->
+<section id="impact" style="background: #EDE6DA">
+<div class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 64px">
+<div>
+<span class="lbl" style="color: #1F3BD6">Where your gift goes</span>
+<h2 class="bod" style="margin: 18px 0 0; font-size: clamp(40px, 7vw, 76px); line-height: .95">Every pound <em>on stage.</em></h2>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.7; color: #3B362F; max-width: 460px">[Short statement on how the budget is managed and reported to supporters.]</p>
+</div>
+<dl style="margin: 0; border-top: 1.5px solid #16130F; align-self: start">
+<div style="display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9BFAE"><dt style="font-size: 17px; font-weight: 500">Singers, choir &amp; musicians</dt><dd class="syn" style="margin: 0; font-size: 34px; font-weight: 800; color: #1F3BD6">[XX%]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9BFAE"><dt style="font-size: 17px; font-weight: 500">Set, costumes &amp; visual design</dt><dd class="syn" style="margin: 0; font-size: 34px; font-weight: 800; color: #1F3BD6">[XX%]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9BFAE"><dt style="font-size: 17px; font-weight: 500">Surtitles, Arabic language &amp; accessibility</dt><dd class="syn" style="margin: 0; font-size: 34px; font-weight: 800; color: #1F3BD6">[XX%]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9BFAE"><dt style="font-size: 17px; font-weight: 500">The next two operas of the cycle</dt><dd class="syn" style="margin: 0; font-size: 34px; font-weight: 800; color: #1F3BD6">[XX%]</dd></div>
+</dl>
+</div>
+</section>
+
+<!-- TRUST -->
+<section class="b-wrap secb" style="padding-top: 110px; padding-bottom: 110px">
+<span class="lbl" style="color: #1F3BD6">They were there</span>
+<blockquote class="lead" style="margin: 22px 0 0; max-width: 900px; font-size: clamp(22px, 3vw, 36px); line-height: 1.35; font-weight: 500">“[Quote from a critic or audience member at the Soria Moria world premiere.]”</blockquote>
+<p class="lbl" style="margin: 18px 0 0; color: #5D574E">[Name · publication or role]</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 16px; margin-top: 56px">
+<div class="syn" style="min-height: 80px; border: 1.5px solid #16130F; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700">Conway Hall · venue</div>
+<div class="lbl" style="min-height: 80px; border: 1.5px dashed #8E8576; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #5D574E">[Partner logo]</div>
+<div class="lbl" style="min-height: 80px; border: 1.5px dashed #8E8576; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #5D574E">[Partner logo]</div>
+<div class="lbl" style="min-height: 80px; border: 1.5px dashed #8E8576; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #5D574E">[Partner logo]</div>
+</div>
+<p style="margin: 24px 0 0; font-size: 14px; color: #5D574E">[Charity or company status · Gift Aid eligibility to confirm]</p>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background: #FFFFFF">
+<div class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 64px">
+<div>
+<span class="lbl" style="color: #1F3BD6">Before you give</span>
+<h2 class="bod" style="margin: 18px 0 0; font-size: clamp(40px, 7vw, 76px); line-height: .95">Questions.</h2>
+</div>
+<div class="faq" style="border-top: 1.5px solid #16130F; align-self: start">
+<details open><summary>Is my payment secure?</summary><p>Payments are handled on a secure payment page. Climate Opera Haus never sees or stores your card details.</p></details>
+<details><summary>Will I receive a receipt?</summary><p>Yes, by email. [Confirm who sends it and when.]</p></details>
+<details><summary>Can I give from outside the United Kingdom?</summary><p>[Confirm accepted cards and currencies.]</p></details>
+<details><summary>Do the gift tiers include tickets?</summary><p>Patron tiers and above include Supporter tickets for 5 December. [Confirm how tickets are issued.]</p></details>
+<details><summary>Can I get a refund?</summary><p>[Refund policy to confirm.]</p></details>
+</div>
+</div>
+</section>
+
+<!-- MANIFESTO -->
+<section style="background: #1F3BD6; color: #FFFFFF">
+<div class="b-wrap secb" style="padding-top: 140px; padding-bottom: 140px">
+<span class="lbl" style="color: #DCE2FF">From the composer’s manifesto</span>
+<blockquote class="bod" style="margin: 28px 0 0; font-size: clamp(30px, 5.6vw, 64px); line-height: 1.08; font-weight: 400; letter-spacing: -.015em; max-width: 1100px; text-wrap: pretty">Climate change is not nature’s revenge — it is <em style="color: #FFD98A">nature speaking</em> after being ignored for too long.</blockquote>
+<p class="syn" style="margin: 40px 0 0; font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase">— Stefania Passamonte</p>
+</div>
+</section>
+
+<!-- TEAM -->
+<section class="b-wrap secb" style="padding-top: 120px; padding-bottom: 120px">
+<span class="lbl" style="color: #1F3BD6">The creators</span>
+<div class="b-team" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px; margin-top: 40px">
+<article style="display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start">
+<div role="img" aria-label="Portrait placeholder" style="height: 230px; background: #E6DED0; border-radius: 999px 999px 0 0; display: flex; align-items: center; justify-content: center" class="lbl">[Portrait]</div>
+<div>
+<h3 class="bod" style="margin: 0; font-size: 40px; font-weight: 400; line-height: 1.05">Stefania<br><em>Passamonte</em></h3>
+<p class="lbl" style="margin: 14px 0 0; font-size: 11px; color: #1F3BD6">Composer · Librettist · Director</p>
+<p style="margin: 16px 0 0; font-size: 15px; line-height: 1.7; color: #3B362F">Composer and pianist writing in the lineage of Italian opera, in dialogue with the musical traditions of each region of the cycle. [Bio to complete]</p>
+</div>
+</article>
+<article style="display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start">
+<div role="img" aria-label="Portrait placeholder" style="height: 230px; background: #E6DED0; border-radius: 999px 999px 0 0; display: flex; align-items: center; justify-content: center" class="lbl">[Portrait]</div>
+<div>
+<h3 class="bod" style="margin: 0; font-size: 40px; font-weight: 400; line-height: 1.05">Genevieve<br><em>Leveille</em></h3>
+<p class="lbl" style="margin: 14px 0 0; font-size: 11px; color: #1F3BD6">Executive Producer · Co-founder</p>
+<p style="margin: 16px 0 0; font-size: 15px; line-height: 1.7; color: #3B362F">Global executive (25+ years across finance, technology and climate), President of Our Mother Earth Foundation. Connects opera with public forums, climate capital and policy dialogue, from COP28 to COP31.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- TICKETS — stub -->
+<section id="tickets" class="b-wrap" style="padding-bottom: 120px">
+<div style="display: flex; flex-wrap: wrap; border: 1.5px solid #16130F; border-radius: 28px; overflow: hidden; background: #FFFFFF">
+<div class="b-tk" style="flex: 999 1 520px; min-width: 0; padding: 48px">
+<span class="lbl" style="color: #1F3BD6">Tickets</span>
+<h2 class="bod h2b" style="margin: 14px 0 28px; font-size: clamp(36px, 5.6vw, 60px); line-height: 1; font-weight: 400">Be there on <em>5 December.</em></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); gap: 16px">
+<div style="border-top: 1.5px solid #16130F; padding-top: 14px"><div class="lbl" style="font-size: 11px">Supporter</div><div class="syn" style="font-size: 30px; font-weight: 700; margin-top: 6px">£25</div></div>
+<div style="border-top: 1.5px solid #16130F; padding-top: 14px"><div class="lbl" style="font-size: 11px">Standard</div><div class="syn" style="font-size: 30px; font-weight: 700; margin-top: 6px">£18</div></div>
+<div style="border-top: 1.5px solid #16130F; padding-top: 14px"><div class="lbl" style="font-size: 11px">Student</div><div class="syn" style="font-size: 30px; font-weight: 700; margin-top: 6px">£12</div></div>
+<div style="border-top: 1.5px solid #16130F; padding-top: 14px"><div class="lbl" style="font-size: 11px">Living Support</div><div class="syn" style="font-size: 30px; font-weight: 700; margin-top: 6px">£10</div></div>
+</div>
+<p style="margin: 18px 0 0; font-size: 13px; color: #5D574E">Advance prices, +£1 on the door · plus £2 venue levy per ticket</p>
+</div>
+<div class="b-tk b-stub" style="flex: 1 1 320px; min-width: 0; padding: 48px; background: #EDE6DA; border-left: 1.5px dashed #16130F; display: flex; flex-direction: column; gap: 18px; justify-content: space-between">
+<div style="font-size: 15px; line-height: 1.7">
+<div class="syn" style="font-weight: 700; font-size: 18px">Conway Hall — Main Hall</div>
+25 Red Lion Square<br>London WC1R 4RL<br>Doors 7:00 pm · all ages · step-free access
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a class="b-btn b-ink" target="_blank" rel="noopener" href="https://conwayhall.ticketsolve.com/ticketbooth/shows/1173675359">Conway Hall</a>
+<a class="b-btn b-ghost" target="_blank" rel="noopener" href="https://posh.vip/e/climate-opera-haus-desert-opera-london-premiere-at-conway-hall">Posh</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #16130F; color: #F5F1EA">
+<div class="b-wrap" style="padding-top: 72px; padding-bottom: 40px">
+<div class="syn" style="font-size: clamp(64px, 15vw, 200px); font-weight: 800; line-height: .86">Climate<br>Opera <span style="color: #C9A56B">Haus</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; margin-top: 56px; padding-top: 24px; border-top: 1px solid #3B362F">
+<nav aria-label="Social" style="display: flex; gap: 28px">
+<a class="lbl" target="_blank" rel="noopener" href="https://www.instagram.com/climateoperahaus/" style="color: #F5F1EA">Instagram</a>
+<a class="lbl" target="_blank" rel="noopener" href="https://www.climateoperahaus.com/" style="color: #F5F1EA">Website</a>
+<a class="lbl" href="#contact" style="color: #F5F1EA">Contact</a>
+</nav>
+<span style="font-size: 13px; color: #C8C0B2">© 2026 Climate Opera Haus · Opera as a ritual of listening</span>
+</div>
+</div>
+</footer>
+
+<div class="m-bar"><span style="font-size: 13px; font-weight: 600">Support the UK premiere</span><a class="b-btn b-lapis" href="#support" style="min-height: 44px; padding: 0 20px">Give now</a></div>
+
+</div>
+</body>
+</html>
